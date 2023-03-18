@@ -52,13 +52,13 @@ onMounted(async () => {
           <div
             class="flex items-center justify-center text-light-2 mb-4 bg-light-6 border-[.08rem] border-blue-2 rounded-lg"
           >
-            <h2 class="text-3xl mb-3 font-Bakbak px-2 pt-2">
+            <h2 class="text-2xl mb-3 font-Bakbak px-2 pt-2">
               {{ repo.name }}
             </h2>
           </div>
           <div
             v-if="repo.id"
-            class="border-[.08rem] border-blue-2 rounded-lg pb-8 text-light-3 text-[1.1rem]"
+            class="border-[.08rem] border-blue-2 rounded-lg pb-8 text-light-3 text-[1rem] sm:text-[1.1rem] lg:text-[1.18rem]"
           >
             <p
               class="border-b-[.08rem] border-blue-2 py-2 px-2 min-[400px]:px-6"
@@ -115,7 +115,7 @@ onMounted(async () => {
         </div>
         <div class="w-full md:w-[25%] text-light-3 my-10 md:my-0">
           <div class="border-b-[.08rem] border-blue-2 pb-6">
-            <h5 class="font-bold mb-4">About</h5>
+            <h5 class="font-bold mb-4 text-[1.07rem]">About</h5>
             <p class="text-[0.9rem] font-light italic mb-4">
               {{ repo.description }}
             </p>
@@ -137,7 +137,7 @@ onMounted(async () => {
             </p>
           </div>
           <div class="border-b-[.08rem] border-blue-2 py-6">
-            <h5 class="italic">Packages</h5>
+            <h5 class="italic text-[1.07rem]">Packages</h5>
             <p
               class="text-sm font-normal flex items-center mr-4 my-2 text-blue-3"
             >
@@ -145,7 +145,7 @@ onMounted(async () => {
             </p>
           </div>
           <div class="border-b-[.08rem] border-blue-2 py-6">
-            <h5 class="italic">Releases</h5>
+            <h5 class="italic text-[1.07rem]">Releases</h5>
             <p
               class="text-sm font-normal flex items-center mr-4 my-2 text-blue-3"
             >
