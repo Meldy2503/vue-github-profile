@@ -3,7 +3,7 @@
     Sorry, could not fetch repositories
   </div>
   <div v-else-if="loading" class="flex justify-center items-center h-screen">
-    <img class="w-[50px] m-auto" src="../assets/loading.gif" alt="loading" />
+    <img class="w-[40px] m-auto" src="../assets/loading.gif" alt="loading" />
   </div>
   <div v-else>
     <h3 class="text-xl font-bold mb-4 text-light-2">Repositories</h3>

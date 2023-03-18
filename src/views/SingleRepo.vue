@@ -39,7 +39,7 @@ onMounted(async () => {
     </div>
     <div v-else-if="loading">
       <img
-        class="w-[50px] mx-auto my-[10rem]"
+        class="w-[40px] mx-auto my-[10rem]"
         src="../assets/loading.gif"
         alt="loading"
       />

@@ -40,6 +40,7 @@
       <li class="text-lg text-light-2">
         <router-link
           class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
+          exact-active-class="bg-blue-2 rounded-md"
           to="/"
           @click="showMenu = false"
           >Home</router-link
@@ -48,6 +49,7 @@
       <li class="text-lg ttext-light-2">
         <router-link
           class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
+          active-class="bg-blue-2 rounded-md"
           to="/repositories"
           @click="showMenu = false"
           >Repositories</router-link
@@ -56,6 +58,7 @@
       <li class="text-lg text-light-2">
         <router-link
           class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
+          active-class="bg-blue-2 rounded-md"
           to="/searchProfiles"
           @click="showMenu = false"
           >Search Profile</router-link
@@ -64,6 +67,7 @@
       <li class="text-lg text-light-2">
         <router-link
           class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
+          active-class="bg-blue-2 rounded-md"
           to="/:catchall(.*)*"
           @click="showMenu = false"
           >Error Page</router-link
