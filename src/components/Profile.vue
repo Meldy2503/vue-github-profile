@@ -15,8 +15,8 @@ onMounted(async () => {
   <div class="md:min-w-[322px] md:w-[322px] rounded-lg relative mr-5">
     <div class="w-full"></div>
     <div v-if="error" class="text-light-1 mt-7">something went wrong</div>
-    <div v-else-if="loading">
-      <img class="w-[30px] mr-1" src="../assets/loading.gif" alt="loading" />
+    <div v-else-if="loading" class="flex justify-center items-center h-screen">
+      <img class="w-[50px] m-auto" src="../assets/loading.gif" alt="loading" />
     </div>
     <div v-else class="flex flex-col m-auto">
       <div
