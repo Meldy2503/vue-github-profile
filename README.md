@@ -1,6 +1,7 @@
 # Vue 3 + Vite
 
-GitHub Finder
+**GitHub Finder**
+
 GitHub Finder is a web application that allows users to search for GitHub accounts and view their profile information. The application uses the GitHub API to fetch data from the GitHub servers and display it in an easy-to-use interface.
 
 Getting Started
