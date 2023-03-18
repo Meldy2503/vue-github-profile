@@ -19,7 +19,7 @@ export default {};
     </div>
 
     <div
-      class="text-light-1 mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-16 md:mt-28 flex flex-col md:items-start items-center"
+      class="text-light-1 mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-20 md:mt-28 flex flex-col md:items-start items-center"
     >
       <h1
         class="font-Bakbak text-[3rem] sm:text-[4rem] xl:text-[5rem] w-full md:w-[50%] leading-[1] text-center md:text-left z-50"
@@ -27,7 +27,7 @@ export default {};
         Welcome to GitHub Finder
       </h1>
       <p
-        class="text-[1rem] sm:text-[1.1rem] lg:text-[1.18rem] text-light-3 w-full min-[400px]:w-[80%] md:w-[50%] font-normal mt-4 text-center md:text-left z-50"
+        class="text-base lg:text-lg text-light-3 w-full min-[400px]:w-[80%] md:w-[50%] font-normal mt-4 text-center md:text-left z-50"
       >
         Check out my Personal Github Profile or Search and Explore any Github
         Profile.

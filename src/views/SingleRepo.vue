@@ -57,36 +57,36 @@ onMounted(async () => {
           </div>
           <div
             v-if="repo.id"
-            class="border-[.08rem] border-blue-2 rounded-lg pb-8 text-light-3 text-[1rem] sm:text-[1.1rem] lg:text-[1.18rem]"
+            class="border-[.08rem] border-blue-2 rounded-lg pb-8 text-light-3"
           >
             <p
-              class="border-b-[.08rem] border-blue-2 py-2 px-2 min-[400px]:px-6"
+              class="border-b-[.08rem] border-blue-2 py-2 px-2 min-[400px]:px-6 text-base lg:text-lg"
             >
               Description : {{ repo.description }}
             </p>
 
-            <h4
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2"
+            <p
+              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Created at : {{ repo.created_at.substring(0, 10) }}
-            </h4>
+            </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2"
+              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Size : {{ repo.size }}KB
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2"
+              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Language : {{ repo.language }}
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2"
+              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Default branch : {{ repo.default_branch }}
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2"
+              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Visibility : {{ repo.visibility }}
             </p>
@@ -114,7 +114,7 @@ onMounted(async () => {
         </div>
         <div class="w-full md:w-[25%] text-light-3 my-10 md:my-0">
           <div class="border-b-[.08rem] border-blue-2 pb-6">
-            <h5 class="font-bold mb-4 text-[1.07rem]">About</h5>
+            <h5 class="font-bold mb-4 text-base lg:text-lg">About</h5>
             <p class="text-[0.9rem] font-light italic mb-4">
               {{ repo.description }}
             </p>
@@ -136,7 +136,7 @@ onMounted(async () => {
             </p>
           </div>
           <div class="border-b-[.08rem] border-blue-2 py-6">
-            <h5 class="italic text-[1.07rem]">Packages</h5>
+            <h5 class="italic text-base lg:text-lg">Packages</h5>
             <p
               class="text-sm font-normal flex items-center mr-4 my-2 text-blue-3"
             >
@@ -144,7 +144,7 @@ onMounted(async () => {
             </p>
           </div>
           <div class="border-b-[.08rem] border-blue-2 py-6">
-            <h5 class="italic text-[1.07rem]">Releases</h5>
+            <h5 class="italic text-base lg:text-lg">Releases</h5>
             <p
               class="text-sm font-normal flex items-center mr-4 my-2 text-blue-3"
             >
