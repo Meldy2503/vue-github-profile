@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .stat-container {
+    @apply px-5 py-[10] rounded-lg flex gap-3 items-center;
+  }
+  .fa-icon {
+    @apply border border-blue-1 rounded-full p-4 w-8 h-8 flex justify-center items-center bg-[#2b64cf1b];
+  }
+  .col2 {
+    @apply flex flex-col;
+  }
+}
+
+:root {
+  --blue-4: #0d1117;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--blue-4);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  margin: 0 auto;
+}
