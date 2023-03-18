@@ -4,7 +4,6 @@ import { onMounted } from "@vue/runtime-core";
 import { ref } from "vue";
 import Overview from "../components/Overview.vue";
 
-// const data = ref(null);
 const error = ref(null);
 const loading = ref(false);
 loading.value = true;
