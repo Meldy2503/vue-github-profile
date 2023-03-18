@@ -3,7 +3,7 @@
     class="max-w-[1200px] w-[90%] flex justify-center items-center flex-col mx-auto my-16 md:my-24 pb-16"
   >
     <div
-      class="relative bg-light-6 w-full min-[400px]:w-[90%] sm:w-[80%] border-[.1rem] border-blue-2 rounded-xl text-light-2 text-center px-2 lg:px-10 pt-10 pb-20 after:absolute after:bottom-0 after:left-0 after:w-full after:h-4 after:bg-gradient-to-r from-grad-1 via-grad-2 to-grad-3 rounded-b-lg after:rounded-br-lg after:rounded-bl-lg"
+      class="relative bg-light-6 w-full min-[400px]:w-[90%] sm:w-[80%] border-[.1rem] border-blue-2 rounded-xl text-light-2 text-center px-2 lg:px-10 pt-10 pb-16 after:absolute after:bottom-0 after:left-0 after:w-full after:h-4 after:bg-gradient-to-r from-grad-1 via-grad-2 to-grad-3 rounded-b-lg after:rounded-br-lg after:rounded-bl-lg"
     >
       <h1
         class="font-Bakbak text-[3rem] xs-[4rem] leading-none mb-4 tracking-wider"
@@ -13,13 +13,13 @@
       <p class="font-bold text-xl">Search for a GitHub Profile</p>
       <form
         @submit.prevent="onSubmitHandler"
-        class="flex gap-x-1 justify-center items-center mt-8 text-blue-1 outline-none border-none"
+        class="flex flex-col sm:flex-row gap-x-1 gap-y-2 justify-center items-center mt-8 text-blue-1 outline-none border-none"
       >
         <input
           v-model="input"
           type="search"
           placeholder="Search profile"
-          class="py-2 px-3 md:p-3 outline-none border-none rounded-md w-[60%] md:w-[40%]"
+          class="py-2 px-3 md:p-3 outline-none border-none rounded-md w-[80%] sm:w-[60%] lg:w-[50%]"
         />
         <button
           type="submit"

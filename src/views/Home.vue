@@ -19,7 +19,7 @@ export default {};
     </div>
 
     <div
-      class="text-light-1 mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-20 md:mt-28 flex flex-col md:items-start items-center"
+      class="text-light-1 mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-12 md:mt-28 flex flex-col md:items-start items-center"
     >
       <h1
         class="font-Bakbak text-[3rem] sm:text-[4rem] xl:text-[5rem] w-full md:w-[50%] leading-[1] text-center md:text-left z-50"
