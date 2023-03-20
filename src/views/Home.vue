@@ -17,9 +17,9 @@ export default {};
     <div class="absolute left-0">
       <img src="../assets/lines.svg" alt="lines" />
     </div>
-
+    <!-- text-[#204298] -->
     <div
-      class="dark:text-light-1 text-[#204298] mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-12 md:mt-28 flex flex-col md:items-start items-center"
+      class="dark:text-light-1 text-[#435268] mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-12 md:mt-28 flex flex-col md:items-start items-center"
     >
       <h1
         class="font-Bakbak text-[3rem] sm:text-[4rem] xl:text-[5rem] w-full md:w-[50%] leading-[1] text-center md:text-left z-50"
@@ -36,12 +36,12 @@ export default {};
         class="mt-12 flex gap-5 font-Bakbak text-md min-[450px]:flex-row flex-col items-center"
       >
         <router-link
-          class="bg-light-1 text-blue-1 p-3 min-[450px]:w-[200px] min-[320px]:w-[60vw] w-[80vw] text-center hover:bg-blue-1 hover:text-light-1 hover:border-blue-2 hover:border-[.1rem] z-50"
+          class="dark:bg-light-1 text-light-1 hover:border-grad-1 hover:bg-light-2 hover:text-grad-1 dark:border-blue-1 bg-grad-1 dark:text-blue-1 p-3 min-[450px]:w-[200px] min-[320px]:w-[60vw] w-[80vw] text-center dark:hover:bg-blue-1 dark:hover:text-light-1 dark:hover:border-blue-2 border-[.1rem] z-50"
           to="/repositories"
           >View Profile</router-link
         >
         <router-link
-          class="dark:bg-blue-1 min-[450px]:w-[200px] min-[320px]:w-[60vw] border-[.1rem] text-center dark:border-blue-2 w-[80vw] p-3 dark:hover:bg-light-1 dark:hover:text-blue-1 z-50"
+          class="dark:bg-blue-1 min-[450px]:w-[200px] min-[320px]:w-[60vw] border-[.1rem] text-center bg-light-2 border-grad-1 text-grad-1 dark:text-light-1 dark:border-blue-2 w-[80vw] p-3 hover:bg-grad-1 hover:text-light-1 dark:hover:bg-light-1 dark:hover:text-blue-1 z-50"
           to="/searchProfiles"
           >Search Profile</router-link
         >

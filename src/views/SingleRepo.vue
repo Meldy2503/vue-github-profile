@@ -34,7 +34,7 @@ onMounted(async () => {
 
 <template>
   <div class="w-[95%] min-[400px]:w-[90%] m-auto max-w-[1200px] mb-20">
-    <div v-if="error" class="text-light-1">
+    <div v-if="error" class="dark:text-light-1 text-blue-2">
       Sorry, cannot fetch this repo at the moment
     </div>
     <div v-else-if="loading">
@@ -49,44 +49,46 @@ onMounted(async () => {
       <div class="flex flex-col justify-between mt-8 md:flex-row">
         <div class="text-xl w-full md:w-[72%]">
           <div
-            class="flex items-center justify-center text-light-2 mb-4 bg-light-6 border-[.08rem] border-blue-2 rounded-lg"
+            class="flex items-center justify-center text-blue-2 shadow-sm dark:text-light-2 mb-4 dark:bg-light-6 border-[.08rem] dark:border-blue-2 rounded-lg border-light-3"
           >
-            <h2 class="text-2xl mb-3 font-Bakbak px-2 pt-2">
+            <h2
+              class="text-2xl min-[400px]:text-3xl mb-3 font-Bakbak px-2 pt-3 pb-1"
+            >
               {{ repo.name }}
             </h2>
           </div>
           <div
             v-if="repo.id"
-            class="border-[.08rem] border-blue-2 rounded-lg pb-8 text-light-3"
+            class="border-[.08rem] border-light-3 dark:border-blue-2 rounded-lg pb-8 dark:text-light-3 text-blue-2"
           >
             <p
-              class="border-b-[.08rem] border-blue-2 py-2 px-2 min-[400px]:px-6 text-base lg:text-lg"
+              class="border-b-[.08rem] border-light-3 dark:border-blue-2 py-2 px-2 min-[400px]:px-6 text-base lg:text-lg"
             >
               Description : {{ repo.description }}
             </p>
 
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
+              class="border-b-[.08rem] border-light-3 dark:border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Created at : {{ repo.created_at.substring(0, 10) }}
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
+              class="border-b-[.08rem] border-light-3 dark:border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Size : {{ repo.size }}KB
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
+              class="border-b-[.08rem] border-light-3 dark:border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Language : {{ repo.language }}
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
+              class="border-b-[.08rem] dark:border-blue-2 border-light-3 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Default branch : {{ repo.default_branch }}
             </p>
             <p
-              class="border-b-[.08rem] border-blue-2 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
+              class="border-b-[.08rem] dark:border-blue-2 border-light-3 px-2 min-[400px]:px-6 py-2 text-base lg:text-lg"
             >
               Visibility : {{ repo.visibility }}
             </p>
@@ -112,8 +114,10 @@ onMounted(async () => {
             </span>
           </div>
         </div>
-        <div class="w-full md:w-[25%] text-light-3 my-10 md:my-0">
-          <div class="border-b-[.08rem] border-blue-2 pb-6">
+        <div
+          class="w-full md:w-[25%] dark:text-light-3 text-blue-1 my-10 md:my-0"
+        >
+          <div class="border-b-[.08rem] border-light-3 dark:border-blue-2 pb-6">
             <h5 class="font-bold mb-4 text-base lg:text-lg">About</h5>
             <p class="text-[0.9rem] font-light italic mb-4">
               {{ repo.description }}
@@ -135,18 +139,18 @@ onMounted(async () => {
               {{ repo.stargazers_count }} star
             </p>
           </div>
-          <div class="border-b-[.08rem] border-blue-2 py-6">
+          <div class="border-b-[.08rem] dark:border-blue-2 border-light-3 py-6">
             <h5 class="italic text-base lg:text-lg">Packages</h5>
             <p
-              class="text-sm font-normal flex items-center mr-4 my-2 text-blue-3"
+              class="text-sm font-normal flex items-center mr-4 my-2 dark:text-blue-3 text-grad-1"
             >
               No packages published
             </p>
           </div>
-          <div class="border-b-[.08rem] border-blue-2 py-6">
+          <div class="border-b-[.08rem] dark:border-blue-2 border-light-3 py-6">
             <h5 class="italic text-base lg:text-lg">Releases</h5>
             <p
-              class="text-sm font-normal flex items-center mr-4 my-2 text-blue-3"
+              class="text-sm font-normal flex items-center mr-4 my-2 dark:text-blue-3 text-grad-1"
             >
               No releases published
             </p>

@@ -122,7 +122,9 @@
       </button>
     </div>
     <div>
-      <label for="pageCountSelect" class="mr-2 text-md text-light-2 font-normal"
+      <label
+        for="pageCountSelect"
+        class="mr-2 text-md text-blue-1 dark:text-light-2 font-normal"
         >Repo Count :</label
       >
       <select

@@ -78,7 +78,7 @@
             <div>
               <h1 class="mb-3 font-bold">{{ user.login }}</h1>
               <a
-                class="px-2 py-[.35rem] text-blue-1 rounded-lg text-sm font-Bakbak dark:bg-gradient-to-r from-grad-2 via-grad-2 to-grad-3"
+                class="px-2 py-[.35rem] text-blue-1 rounded-lg text-sm font-Bakbak bg-gradient-to-r from-grad-2 via-grad-2 to-grad-3"
                 :href="user.html_url"
                 target="_blank"
                 >View Profile</a
