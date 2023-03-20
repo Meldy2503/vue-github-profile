@@ -1,24 +1,28 @@
 <template>
-  <div v-if="error" class="text-light-1 mt-7">
+  <div v-if="error" class="text-blue-1 dark:text-light-1 mt-7">
     Sorry, could not fetch repositories
   </div>
   <div v-else-if="loading" class="flex justify-center items-center h-screen">
     <img class="w-[40px] m-auto" src="../assets/loading.gif" alt="loading" />
   </div>
   <div v-else>
-    <h3 class="text-xl font-bold mb-4 text-light-2">Repositories</h3>
+    <h3 class="text-xl font-bold mb-4 text-blue-2 dark:text-light-2">
+      Repositories
+    </h3>
     <div class="flex flex-wrap gap-3 md:gap-x-10">
       <div
         @click="$router.push(`/repositories/${item.id}`)"
-        class="w-full xl:w-[46%] text-light-2 px-6 py-9 font-normal flex justify-between shadow-lg border-[.1rem] border-blue-2 cursor-pointer hover:scale-[0.98] transition duration-200 ease-in-out rounded-md"
+        class="w-full xl:w-[47%] text-blue-2 bg-light-1 shadow-lg dark:bg-blue-1 dark:text-light-2 px-6 py-9 font-normal flex justify-between border-light-1 dark:border-[.1rem] dark:border-blue-2 cursor-pointer hover:scale-[0.98] transition duration-200 ease-in-out rounded-md"
         v-for="item in paginatedData"
         :key="item.id"
       >
         <div>
           <span class="flex gap-x-2 items-center mb-4">
-            <p class="text-lg font-bold text-blue-3">{{ item.name }}</p>
+            <p class="text-lg font-bold text-grad-1 dark:text-blue-3">
+              {{ item.name }}
+            </p>
             <button
-              class="pointer bg-blue-1 text-xs font-light border-[.1rem] px-2 py-[.1rem] border-blue-2 text-light-4 rounded-full"
+              class="pointer dark:bg-blue-1 text-xs font-light border-[.1rem] px-2 py-[.1rem] border-light-3 dark:border-blue-2 shadow-sm dark:text-light-4 rounded-full"
             >
               {{
                 item.visibility.charAt(0).toUpperCase() +
@@ -26,7 +30,7 @@
               }}
             </button>
           </span>
-          <span class="flex items-center text-light-4 my-2">
+          <span class="flex items-center dark:text-light-4 text-blue-2 my-2">
             <p v-if="item.language === null"></p>
             <p
               v-else-if="item.language === 'HTML'"
@@ -83,11 +87,9 @@
     </div>
   </div>
   <div
-    class="flex items-center justify-center mt-10 pb-6 text-light-2 flex-wrap gap-x-16 gap-y-5 text-center"
+    class="flex items-center justify-center mt-10 pb-6 dark:text-light-3 text-blue-2 flex-wrap gap-x-16 gap-y-5 text-center"
   >
-    <p class="text-md font-normal text-light-3">
-      Page {{ currentPage }} of {{ pageCount }}
-    </p>
+    <p class="text-md font-normal">Page {{ currentPage }} of {{ pageCount }}</p>
     <div class="flex flex-wrap items-center space-x-2">
       <button
         @click="prevPage"
@@ -102,9 +104,9 @@
           :key="pageNumber"
           @click="currentPage = pageNumber"
           :class="{
-            'bg-blue-2 rounded-lg py-[.1rem] px-3 text-light-3':
+            'dark:bg-blue-2 border-[0.1rem] border-[#238636] dark:border-blue-2 rounded-lg py-[.1rem] px-3 dark:text-light-3 text-blue-2':
               currentPage === pageNumber,
-            'text-light-2 hover:text-light-2 hover:bg-blue-2 rounded-lg py-[.1rem] px-2':
+            'dark:text-light-2 dark:hover:text-light-2 dark:hover:bg-blue-2 border-[0.1rem]  border-light-2 dark:border-blue-1 hover:border-[#238636]  rounded-lg py-[.1rem] px-2':
               currentPage !== pageNumber,
           }"
         >
@@ -127,7 +129,7 @@
         id="pageCountSelect"
         v-model="itemsPerPage"
         @change="changePageCount"
-        class="rounded-lg py-1 px-3 text-md font-normal text-light-3 bg-blue-2 border-none outline-none"
+        class="rounded-lg py-1 px-3 text-md font-normal text-blue-1 dark:text-light-3 dark:bg-blue-2 bg-light-1 shadow-lg border-none outline-none"
       >
         <option
           v-for="option in pageCountOptions"

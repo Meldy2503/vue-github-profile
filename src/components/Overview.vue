@@ -12,9 +12,9 @@ onMounted(async () => {
   <div class="">
     <!-- <h3>Overview</h3> -->
     <ul
-      class="list-none flex flex-wrap items-center gap-4 pb-4 pt-0 border-b-[.01rem] border-blue-2"
+      class="list-none flex flex-wrap items-center gap-4 p-4 border-b-[.01rem] dark:border-blue-2 border-light-2 shadow-md bg-light-1 dark:bg-blue-1 rounded-md dark:rounded-none"
     >
-      <li class="text-light-3 text-sm mr-4">
+      <li class="dark:text-light-3 text-blue-1 text-sm mr-4">
         <a
           href="https://github.com/Meldy2503"
           target="_blank"
@@ -25,7 +25,7 @@ onMounted(async () => {
         </a>
       </li>
       <!-- <RepoStat /> -->
-      <li class="text-light-3 text-sm mr-4">
+      <li class="dark:text-light-3 text-blue-1 text-sm mr-4">
         <a
           href="https://github.com/Meldy2503?tab=repositories"
           target="_blank"
@@ -37,23 +37,23 @@ onMounted(async () => {
             alt="book"
           />
           <p>Repositories</p>
-          <p class="bg-blue-2 px-2 py-[.1rem] rounded-lg">
+          <p class="bg-blue-2 text-light-3 px-2 py-[.1rem] rounded-lg">
             {{ data.public_repos }}
           </p>
         </a>
       </li>
       <!-- <FollowersStat /> -->
-      <li class="text-light-3 text-sm mr-4">
+      <li class="dark:text-light-3 text-blue-1 text-sm mr-4">
         <div class="flex items-center gap-x-1">
           <img class="w-[18px] mr-1" src="../assets/person.svg" alt="people" />
           <p>Followers</p>
-          <p class="bg-blue-2 px-2 py-[.1rem] rounded-lg">
+          <p class="bg-blue-2 text-light-3 px-2 py-[.1rem] rounded-lg">
             {{ data.followers }}
           </p>
         </div>
       </li>
       <!-- <FollowingStat /> -->
-      <li class="text-light-3 text-sm mr-4">
+      <li class="dark:text-light-3 text-blue-1 text-sm mr-4">
         <div class="flex items-center gap-x-1">
           <img
             class="w-[18px] mr-1"
@@ -61,7 +61,7 @@ onMounted(async () => {
             alt="people"
           />
           <p>Following</p>
-          <p class="bg-blue-2 px-2 py-[.1rem] rounded-lg">
+          <p class="bg-blue-2 text-light-3 px-2 py-[.1rem] rounded-lg">
             {{ data.following }}
           </p>
         </div>

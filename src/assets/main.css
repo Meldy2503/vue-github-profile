@@ -15,10 +15,16 @@
     @apply flex flex-col;
   }
 }
-
-:root {
-  --blue-4: #0d1117;
+@layer base {
+  body {
+    @apply dark:bg-[#0d1117] bg-[#fcfcfc];
+  }
 }
+
+/* :root {
+  --blue-4: #0d1117;
+  --light-4: #eef0f5;
+} */
 
 *,
 *::before,
@@ -30,8 +36,8 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: var(--blue-4);
   overflow-x: hidden;
+  /* background-color: {isDark ? var(--light-4) : var(--blue-4)}; */
 }
 
 a {

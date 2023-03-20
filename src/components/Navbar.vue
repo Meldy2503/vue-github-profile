@@ -1,13 +1,16 @@
 <template>
   <nav
-    class="container py-4 mx-auto md:flex md:justify-between md:items-center max-w-[1200px] w-[95%] min-[400px]:w-[90%] font-Bakbak text-light-2"
+    class="container py-4 mx-auto md:flex md:justify-between md:items-center max-w-[1200px] w-[95%] min-[400px]:w-[90%] font-Bakbak dark:text-light-2 text-blue-2"
   >
     <div class="flex items-center justify-between">
-      <router-link
-        to="/"
-        class="text-lg text-gray-800 border-2 border-light-3 px-2"
-        >G<span class="text-2xl text-grad-1">H</span>F
-      </router-link>
+      <div>
+        <router-link
+          to="/"
+          class="text-lg text-gray-800 border-2 border-light-3 px-2"
+          >G<span class="text-2xl text-grad-1">H</span>F
+        </router-link>
+      </div>
+
       <!-- Mobile menu button -->
       <div @click="showMenu = !showMenu" class="flex md:hidden">
         <div v-if="!showMenu">
@@ -20,7 +23,7 @@
             </svg>
           </button>
         </div>
-        <div v-else-if="showMenu">
+        <div class="bg-light-1 h-[25px] rounded-lg" v-else-if="showMenu">
           <button type="button">
             <img
               class="w-[26px]"
@@ -31,16 +34,32 @@
         </div>
       </div>
     </div>
+    <div>
+      <button @click="toggleDark()">
+        <img
+          v-show="isDark"
+          class="w-8"
+          src="../assets/light.svg"
+          alt="light mode"
+        />
+        <img
+          v-show="!isDark"
+          class="w-6"
+          src="../assets/dark.svg"
+          alt="dark mode"
+        />
+      </button>
+    </div>
 
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <ul
       :class="showMenu ? 'flex' : 'hidden'"
-      class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-3 md:mt-0"
+      class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-2 md:mt-0"
     >
       <li class="text-lg text-light-2">
         <router-link
-          class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
-          exact-active-class="bg-blue-2 rounded-md"
+          class="dark:hover:bg-blue-2 hover:text-grad-1 px-4 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
+          exact-active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
           to="/"
           @click="showMenu = false"
           >Home</router-link
@@ -48,8 +67,8 @@
       </li>
       <li class="text-lg ttext-light-2">
         <router-link
-          class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
-          active-class="bg-blue-2 rounded-md"
+          class="dark:hover:bg-blue-2 hover:text-grad-1 px-4 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
+          active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
           to="/repositories"
           @click="showMenu = false"
           >Repositories</router-link
@@ -57,8 +76,8 @@
       </li>
       <li class="text-lg text-light-2">
         <router-link
-          class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
-          active-class="bg-blue-2 rounded-md"
+          class="dark:hover:bg-blue-2 hover:text-grad-1 px-4 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
+          active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
           to="/searchProfiles"
           @click="showMenu = false"
           >Search Profile</router-link
@@ -66,8 +85,8 @@
       </li>
       <li class="text-lg text-light-2">
         <router-link
-          class="hover:bg-blue-2 px-4 py-1 hover:rounded-md"
-          active-class="bg-blue-2 rounded-md"
+          class="dark:hover:bg-blue-2 hover:text-grad-1 px-4 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
+          active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
           to="/:catchall(.*)*"
           @click="showMenu = false"
           >Error Page</router-link
@@ -76,12 +95,10 @@
     </ul>
   </nav>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-};
+<script setup>
+import { ref } from "vue";
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+const showMenu = ref(false);
 </script>

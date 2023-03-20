@@ -19,7 +19,7 @@ export default {};
     </div>
 
     <div
-      class="text-light-1 mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-12 md:mt-28 flex flex-col md:items-start items-center"
+      class="dark:text-light-1 text-[#204298] mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-12 md:mt-28 flex flex-col md:items-start items-center"
     >
       <h1
         class="font-Bakbak text-[3rem] sm:text-[4rem] xl:text-[5rem] w-full md:w-[50%] leading-[1] text-center md:text-left z-50"
@@ -27,7 +27,7 @@ export default {};
         Welcome to GitHub Finder
       </h1>
       <p
-        class="text-base lg:text-lg text-light-3 w-full min-[400px]:w-[80%] md:w-[50%] font-normal mt-4 text-center md:text-left z-50"
+        class="text-base lg:text-lg text-blue-1 dark:text-light-3 w-full min-[400px]:w-[80%] md:w-[50%] font-normal mt-4 text-center md:text-left z-50"
       >
         Check out my Personal Github Profile or Search and Explore any Github
         Profile.
@@ -41,7 +41,7 @@ export default {};
           >View Profile</router-link
         >
         <router-link
-          class="bg-blue-1 min-[450px]:w-[200px] min-[320px]:w-[60vw] border-[.1rem] text-center border-blue-2 w-[80vw] p-3 hover:bg-light-1 hover:text-blue-1 z-50"
+          class="dark:bg-blue-1 min-[450px]:w-[200px] min-[320px]:w-[60vw] border-[.1rem] text-center dark:border-blue-2 w-[80vw] p-3 dark:hover:bg-light-1 dark:hover:text-blue-1 z-50"
           to="/searchProfiles"
           >Search Profile</router-link
         >

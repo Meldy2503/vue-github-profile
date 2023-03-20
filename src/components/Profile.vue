@@ -27,13 +27,15 @@ onMounted(async () => {
           :src="data.avatar_url"
           alt="profile picture"
         />
-        <div class="mt-5 text-light-2 w-[100%] min-[400px]:w-full">
+        <div
+          class="mt-5 text-light-5 dark:text-light-2 w-[100%] min-[400px]:w-full"
+        >
           <h3 class="my-[5px] font-md text-3xl font-Bakbak">{{ data.name }}</h3>
           <p class="text-light-4 text-lg font-bold">@{{ data.login }}</p>
         </div>
       </div>
       <div
-        class="flex flex-col gap-3 mt-1 mb-2 text-light-3 w-[100%] min-[400px]:w-full"
+        class="flex flex-col gap-3 mt-1 mb-2 text-blue-1 dark:text-light-3 w-[100%] min-[400px]:w-full"
       >
         <p class="mt-4 text-md font-normal">{{ data.bio }}</p>
         <a
@@ -54,7 +56,7 @@ onMounted(async () => {
             src="../assets/location-svgrepo-com.svg"
             alt="location"
           />
-          <p class="font-light">Lagos, Nigeria</p>
+          <p class="dark:font-light font-normal">Lagos, Nigeria</p>
         </span>
         <span class="flex gap-x-2">
           <img
@@ -63,7 +65,7 @@ onMounted(async () => {
             alt="mail"
           />
           <a
-            class="font-light text-light-3 hover:text-blue-3 hover:underline"
+            class="dark:font-light font-normal dark:text-light-3 text-blue-1 hover:text-blue-3 hover:underline"
             href="mailto:emelder.charles25@gmail.com"
             target="_blank"
             >emelder.charles25@gmail.com</a
@@ -76,7 +78,7 @@ onMounted(async () => {
             alt="twitter"
           />
           <a
-            class="font-light text-light-3 hover:text-blue-3 hover:underline"
+            class="dark:font-light font-normal dark:text-light-3 text-blue-1 hover:text-blue-3 hover:underline"
             href="https://twitter.com/EmelderOkafor"
             target="_blank"
             >@{{ data.twitter_username }}</a
@@ -85,7 +87,7 @@ onMounted(async () => {
         <span class="flex gap-x-2">
           <img class="w-[19px]" src="../assets/link.svg" alt="link" />
           <a
-            class="font-light text-light-3 hover:text-blue-3 hover:underline"
+            class="dark:font-light font-normal dark:text-light-3 text-blue-1 hover:text-blue-3 hover:underline"
             href="https://emelder-okafor-portfolio.netlify.app/"
             target="_blank"
             >portfolio</a
