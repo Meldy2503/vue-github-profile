@@ -9,6 +9,7 @@
         >G<span class="text-2xl text-grad-1">H</span>F
       </router-link>
     </div>
+    <!-- toggle light and dark mode -->
     <div>
       <button
         @click="toggleDark()"
