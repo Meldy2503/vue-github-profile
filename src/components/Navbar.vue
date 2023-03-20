@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="container py-4 mx-auto flex justify-between items-start md:items-center max-w-[1200px] w-[95%] min-[400px]:w-[90%] font-Bakbak dark:text-light-2 text-blue-2"
+    class="container py-4 mx-auto flex justify-between items-start md:items-center max-w-[1200px] w-[95%] min-[400px]:w-[90%] font-Bakbak dark:text-light-2 text-light-5"
   >
     <div>
       <router-link
@@ -10,19 +10,24 @@
       </router-link>
     </div>
     <div>
-      <button @click="toggleDark()">
+      <button
+        @click="toggleDark()"
+        class="flex items-center rounded-lg px-1 border-[.1rem] dark:border-light-5 border-light-3 outline-none"
+      >
         <img
-          v-show="isDark"
-          class="w-8"
+          v-show="!isDark"
+          class="w-6"
           src="../assets/light.svg"
           alt="light mode"
         />
+        <p v-show="!isDark" class="text-xs">light</p>
         <img
-          v-show="!isDark"
+          v-show="isDark"
           class="w-6"
           src="../assets/dark.svg"
           alt="dark mode"
         />
+        <p v-show="isDark" class="text-xs">dark</p>
       </button>
     </div>
 

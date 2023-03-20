@@ -17,7 +17,6 @@ export default {};
     <div class="absolute left-0">
       <img src="../assets/lines.svg" alt="lines" />
     </div>
-    <!-- text-[#204298] -->
     <div
       class="dark:text-light-1 text-[#435268] mx-auto max-w-[1200px] w-[95%] min-[400px]:w-[90%] mt-12 md:mt-28 flex flex-col md:items-start items-center"
     >
