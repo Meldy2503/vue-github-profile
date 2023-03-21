@@ -54,7 +54,7 @@
             <div>
               <h1 class="mb-3 font-bold">{{ user.login }}</h1>
               <a
-                class="px-2 py-[.35rem] bg-gradient-to-r from-grad-2 via-grad-2 to-grad-3 text-blue-1 rounded-lg text-sm font-Bakbak"
+                class="px-2 py-[.35rem] bg-gradient-to-r from-grad-3 via-grad-3 to-grad-2 text-blue-1 rounded-lg text-sm font-Bakbak hover:bg-gradient-to-r hover:from-grad-2 hover:via-grad-2 hover:to-grad-3"
                 :href="user.html_url"
                 target="_blank"
                 >View Profile</a

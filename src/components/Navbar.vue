@@ -21,14 +21,14 @@
           src="../assets/light.svg"
           alt="light mode"
         />
-        <p v-show="!isDark" class="text-xs">light</p>
+        <p v-show="!isDark" class="text-xs text-light-5">light</p>
         <img
           v-show="isDark"
           class="w-6"
           src="../assets/dark.svg"
           alt="dark mode"
         />
-        <p v-show="isDark" class="text-xs">dark</p>
+        <p v-show="isDark" class="text-xs text-light-2">dark</p>
       </button>
     </div>
 
@@ -61,7 +61,7 @@
         :class="showMenu ? 'flex' : 'hidden'"
         class="flex-col mt-8 space-y-4 md:flex items-end md:space-y-0 md:flex-row md:items-center md:space-x-2 md:mt-0"
       >
-        <li class="text-lg text-light-2">
+        <li class="text-md text-light-2">
           <router-link
             class="dark:hover:bg-blue-2 hover:text-grad-1 px-3 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
             exact-active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
@@ -70,7 +70,7 @@
             >Home</router-link
           >
         </li>
-        <li class="text-lg ttext-light-2">
+        <li class="text-md text-light-2">
           <router-link
             class="dark:hover:bg-blue-2 hover:text-grad-1 px-3 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
             active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
@@ -79,7 +79,7 @@
             >Repositories</router-link
           >
         </li>
-        <li class="text-lg text-light-2">
+        <li class="text-md text-light-2">
           <router-link
             class="dark:hover:bg-blue-2 hover:text-grad-1 px-3 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
             active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
@@ -88,7 +88,7 @@
             >Search Profile</router-link
           >
         </li>
-        <li class="text-lg text-light-2">
+        <li class="text-md text-light-2">
           <router-link
             class="dark:hover:bg-blue-2 hover:text-grad-1 px-3 py-1 hover:rounded-md dark:text-light-2 text-blue-2"
             active-class="text-grad-1 dark:text-light-2  dark:bg-blue-2 rounded-md"
@@ -105,6 +105,7 @@
 import { ref } from "vue";
 import { useDark, useToggle } from "@vueuse/core";
 const isDark = useDark();
+isDark.value = true;
 const toggleDark = useToggle(isDark);
 const showMenu = ref(false);
 </script>

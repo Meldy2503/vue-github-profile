@@ -12,7 +12,7 @@ onMounted(async () => {
   <div class="">
     <!-- <h3>Overview</h3> -->
     <ul
-      class="list-none flex flex-wrap items-center gap-y-4 gap-x-6 p-4 border-b-[.01rem] dark:border-blue-2 border-light-2 shadow-md bg-light-1 dark:bg-blue-1 rounded-md dark:rounded-none"
+      class="list-none flex flex-wrap items-center gap-y-4 gap-x-6 p-4 border-b-[.01rem] dark:border-blue-2 border-light-2 shadow-md bg-light-1 dark:bg-blue-1 rounded-lg dark:rounded-none"
     >
       <li class="dark:text-light-3 text-blue-1 text-sm mr-4">
         <a
