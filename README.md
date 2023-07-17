@@ -17,6 +17,16 @@ GitHub Finder was built using the following technologies and tools:
 - Axios: A library used for making HTTP requests to the GitHub API.
 - Tailwind CSS: A utility-first CSS framework for responsive design.
 
+
+## Features
+- Display personal GitHub profile
+- Search and explore any GitHub profile
+- Utilization of GitHub API endpoints using Axios
+- Styling with Tailwind CSS
+- Page routing with vue-router
+- SEO optimization with React Helmet Async
+
+
 ## Installation
 To run GitHub Finder locally, you need to clone the repository to your local machine and install the necessary dependencies. Follow these steps:
 
