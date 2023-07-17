@@ -1,53 +1,62 @@
-# Vue 3 + Vite
 
-**GitHub Finder**
+# GitHub Finder
 
-![Vue-github-finder](images/nail-boutique-logo.jpg)
+![Vue-github-finder](vue-github-profile.png)
 
+GitHub Finder is a web application built with Vue.js that allows users to view my personal github profile information and also search for GitHub profiles. The application utilizes the GitHub API to fetch data from GitHub servers and provides a user-friendly interface for displaying the retrieved information.
 
+## Getting Started
+To use GitHub Finder, simply navigate to the home page to view my profile. You can also search for other GitHub users by using the search button on the home page, which will redirect you to the search page. Enter the username you wish to search for and click the "Search" button.
 
-GitHub Finder is a web application that allows users to search for GitHub accounts and view their profile information. The application uses the GitHub API to fetch data from the GitHub servers and display it in an easy-to-use interface.
+## Technologies Used
+GitHub Finder was built using the following technologies and tools:
+- Vue.js: A progressive JavaScript framework for building user interfaces.
+- HTML: The markup language used for structuring the application.
+- CSS: The styling language used for visual design.
+- JavaScript: The programming language used for implementing logic and interactivity.
+- Axios: A library used for making HTTP requests to the GitHub API.
+- Tailwind CSS: A utility-first CSS framework for responsive design.
 
-Getting Started
-To use GitHub Finder, simply navigate to the home page to viewing my profile, you can also search for other GitHub users using the search button on the home page which will navigate uou to the search page. Simply enter the username you wish to search for and click the "Search" button.
+## Installation
+To run GitHub Finder locally, you need to clone the repository to your local machine and install the necessary dependencies. Follow these steps:
 
-Technologies Used
-GitHub Finder was built using a combination of Vuejs, HTML, CSS, and JavaScript. The application makes use of the Axios library to fetch data from the GitHub API, and the TailwindCSS framework for responsive design.
+1. Clone the repository using the following command:
 
-Installation
-To run GitHub Finder locally, you will need to clone the repository to your local machine and install the necessary dependencies. To do this, follow these steps:
+   ```bash
+   git clone https://github.com/Meldy2503/vue-github-profile.git
+   ```
 
-Clone the repository using the following command:
+2. Navigate to the cloned repository:
 
-bash
-Copy code
-git clone https://github.com/Meldy2503/vue-github-profile.git
-Navigate to the cloned repository:
+   ```bash
+   cd github-finder
+   ```
 
-bash
-Copy code
-cd github-finder
-Install the dependencies:
+3. Install the dependencies:
 
-Copy code
-npm install
-Start the application:
+   ```bash
+   npm install
+   ```
 
-sql
-Copy code
-npm start
-The application should now be running at http://localhost:3000.
+4. Start the application:
 
-Contributing
-Contributions to GitHub Finder are welcome and encouraged! To contribute, please fork the repository and submit a pull request with your changes.
+   ```bash
+   npm start
+   ```
 
-License
-GitHub Finder is licensed under the MIT License. See LICENSE for more information.
+   The application should now be running at http://localhost:3000.
 
-url: https://vue-github-profile.vercel.app/
+## Contributing
+Contributions to GitHub Finder are welcome and encouraged! If you would like to contribute, please fork the repository and submit a pull request with your changes.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## License
+GitHub Finder is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Recommended IDE Setup
+## Project Demo
+You can access the live demo of GitHub Finder at [vue-github-profile](https://vue-github-profile.vercel.app/).
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## IDE Setup
+For the best development experience, it is recommended to set up your IDE as follows:
+- [VS Code](https://code.visualstudio.com/) with the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension (disable Vetur) and the [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+Thank you for using GitHub Finder. Explore GitHub profiles, view details, and enjoy searching for GitHub users effortlessly! If you have any questions or encounter any issues, please refer to the project's documentation or seek assistance from the project maintainers.
